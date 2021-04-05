@@ -5,11 +5,11 @@ int countPairs1(int *arr, int len, int value) {
   kolvo = 0;
   for (int i = 0; i < len - 1; i++) {
     for (int j = i + 1; j < len; j++) {
-      if ((arr[i] + arr[j]) == value) 
+      if ((arr[i] + arr[j]) == value)
         kolvo++;
     }
   }
-  return kolvo;        
+  return kolvo;
 }
 
 int countPairs2(int *arr, int len, int value) {
@@ -17,7 +17,7 @@ int countPairs2(int *arr, int len, int value) {
   int kolvo = 0;
   int l = 0, r = l -1;
   while ((r - 1) > l) {
-    int ser = (r + l)/2; 
+    int ser = (r + l)/2;
     if (value >= arr[ser]) 
       l = ser;
     else 

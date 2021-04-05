@@ -17,7 +17,7 @@ int countPairs2(int *arr, int len, int value) {
   int kolvo = 0;
   int l = 0, r = l -1;
   while ((r - 1) > l) {
-    int ser = (r + l)/2;
+    int ser = (r + l)/2; 
     if (value >= arr[ser]) 
       l = ser;
     else 
